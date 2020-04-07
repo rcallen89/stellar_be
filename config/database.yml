@@ -1,0 +1,14 @@
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: stellar_BE_test
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: stellar_BE_dev
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: stellar_BE
