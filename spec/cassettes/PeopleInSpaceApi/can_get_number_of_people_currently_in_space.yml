@@ -1,0 +1,77 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.open-notify.org/astros.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.3
+      Date:
+      - Thu, 09 Apr 2020 01:55:47 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '177'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: '{"people": [{"craft": "ISS", "name": "Andrew Morgan"}, {"craft": "ISS",
+        "name": "Oleg Skripochka"}, {"craft": "ISS", "name": "Jessica Meir"}], "message":
+        "success", "number": 3}'
+    http_version: null
+  recorded_at: Thu, 09 Apr 2020 01:55:47 GMT
+- request:
+    method: get
+    uri: http://api.open-notify.org/astros.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.3
+      Date:
+      - Thu, 09 Apr 2020 02:12:57 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '177'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: '{"people": [{"craft": "ISS", "name": "Andrew Morgan"}, {"craft": "ISS",
+        "name": "Oleg Skripochka"}, {"craft": "ISS", "name": "Jessica Meir"}], "message":
+        "success", "number": 3}'
+    http_version: null
+  recorded_at: Thu, 09 Apr 2020 02:12:57 GMT
+recorded_with: VCR 5.1.0
