@@ -1,4 +1,4 @@
-class SpacePeople
+class SpacePeopleService
   def get_data
     response = Faraday.get('http://api.open-notify.org/astros.json')
     JSON.parse(response.body, symbolize_names: true)[:people]
@@ -10,7 +10,7 @@ class SpacePeople
     json.map { |object| object[:craft] }.uniq
   end
 
-  def get_people
+  def get_names
     response = Faraday.get('http://api.open-notify.org/astros.json')
     json = JSON.parse(response.body, symbolize_names: true)[:people]
     json.map { |object| object[:name] }
