@@ -1,5 +1,8 @@
 require 'bundler'
 require 'sinatra/json'
+require 'dotenv'
+Dotenv.load
+
 Bundler.require
 # get the path of the root of the app
 APP_ROOT = File.expand_path("..", __dir__)
