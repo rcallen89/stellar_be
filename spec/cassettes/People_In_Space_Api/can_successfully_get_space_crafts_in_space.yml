@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx/1.10.3
       Date:
-      - Thu, 09 Apr 2020 20:14:52 GMT
+      - Thu, 09 Apr 2020 23:19:29 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -38,5 +38,5 @@ http_interactions:
         {"name": "Ivan Vagner", "craft": "ISS"}], "message": "success", "number":
         6}'
     http_version: null
-  recorded_at: Thu, 09 Apr 2020 20:14:52 GMT
+  recorded_at: Thu, 09 Apr 2020 23:19:29 GMT
 recorded_with: VCR 5.1.0
