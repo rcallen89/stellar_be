@@ -14,9 +14,10 @@ gem 'rack'
 gem 'figaro'
 gem 'faraday'
 gem 'fast_jsonapi'
+gem 'json'
+gem 'sinatra-contrib'
 
 group :development, :test do
-  gem 'rake'
   gem 'pry'
   gem 'rspec'
   gem 'capybara'

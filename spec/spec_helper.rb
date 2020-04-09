@@ -33,6 +33,7 @@ end
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
+    config.include Rack::Test::Methods
     config.include Capybara::DSL
 
     config.before(:all) do
