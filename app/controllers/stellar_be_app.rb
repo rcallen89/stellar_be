@@ -11,9 +11,15 @@ class StellarBeAPP < Sinatra::Base
     json(response)
   end
 
-  get '/people_in_space' do
+  get '/people-in-space' do
     service = SpacePeopleService.new
-    response = service.get_data(params[:query])
+    response = service.get_data
+    json(response)
+  end
+
+  get '/astronomy' do
+    service = MoonSunService.new
+    response = service.get_response(params[:query])
     json(response)
   end
 end
