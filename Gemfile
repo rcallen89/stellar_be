@@ -17,7 +17,6 @@ gem 'faraday'
 gem 'fast_jsonapi'
 
 group :development, :test do
-  gem 'rake'
   gem 'pry'
   gem 'rspec'
   gem 'capybara'

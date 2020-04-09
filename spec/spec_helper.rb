@@ -8,6 +8,7 @@ require 'webmock/rspec'
 require 'capybara/dsl'
 require 'database_cleaner'
 require 'shoulda-matchers'
+require 'pry'
 
 VCR.configure do |config|
   config.ignore_localhost = true

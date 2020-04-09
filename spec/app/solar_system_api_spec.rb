@@ -6,4 +6,9 @@ RSpec.describe "SolarSystemApi" do
     objects = SolarSystem.new
     expect(objects.get_bodies.class).to eq(Array)
   end
+  
+  it "can get single body", :vcr do
+    object = SolarSystem.new
+    expect(object.get_single_body("jupiter").class).to eq(Hash)
+  end
 end
