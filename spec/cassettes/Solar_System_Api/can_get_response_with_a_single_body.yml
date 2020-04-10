@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.le-systeme-solaire.net/rest/bodies/mars
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Apr 2020 23:19:30 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Iplb-Instance:
+      - '29045'
+      Set-Cookie:
+      - SERVERID102299=22051|Xo+th|Xo+th; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpZCI6Im1hcnMiLCJuYW1lIjoiTWFycyIsImVuZ2xpc2hOYW1lIjoiTWFycyIsImlzUGxhbmV0Ijp0cnVlLCJtb29ucyI6W3sibW9vbiI6IlBob2JvcyIsInJlbCI6Imh0dHBzOi8vYXBpLmxlLXN5c3RlbWUtc29sYWlyZS5uZXQvcmVzdC9ib2RpZXMvcGhvYm9zIn0seyJtb29uIjoiRGXDr21vcyIsInJlbCI6Imh0dHBzOi8vYXBpLmxlLXN5c3RlbWUtc29sYWlyZS5uZXQvcmVzdC9ib2RpZXMvZGVpbW9zIn1dLCJzZW1pbWFqb3JBeGlzIjoyMjc5NDM4MjQsInBlcmloZWxpb24iOjIwNjcwMDAwMCwiYXBoZWxpb24iOjI0OTIwMDAwMCwiZWNjZW50cmljaXR5IjowLjA5MzUwLCJpbmNsaW5hdGlvbiI6MS44NTAwMCwibWFzcyI6eyJtYXNzVmFsdWUiOjYuNDE3MTIsICJtYXNzRXhwb25lbnQiOjIzfSwidm9sIjp7InZvbFZhbHVlIjoxLjYzMTgwLCAidm9sRXhwb25lbnQiOjExfSwiZGVuc2l0eSI6My45MzQxMCwiZ3Jhdml0eSI6My43MTAwMCwiZXNjYXBlIjo1MDMwLjAwMDAwLCJtZWFuUmFkaXVzIjozMzg5LjUwMDAwLCJlcXVhUmFkaXVzIjozMzk2LjE5MDAwLCJwb2xhclJhZGl1cyI6MzM3Ni4yMDAwMCwiZmxhdHRlbmluZyI6MC4wMDU4OSwiZGltZW5zaW9uIjoiIiwic2lkZXJhbE9yYml0Ijo2ODYuOTgwMDAsInNpZGVyYWxSb3RhdGlvbiI6MjQuNjIyOTAsImFyb3VuZFBsYW5ldCI6bnVsbCwiZGlzY292ZXJlZEJ5IjoiIiwiZGlzY292ZXJ5RGF0ZSI6IiIsImFsdGVybmF0aXZlTmFtZSI6IiJ9
+    http_version: null
+  recorded_at: Thu, 09 Apr 2020 23:19:30 GMT
+recorded_with: VCR 5.1.0

@@ -15,6 +15,7 @@ gem 'rack'
 gem 'figaro'
 gem 'faraday'
 gem 'fast_jsonapi'
+gem 'dotenv'
 
 group :development, :test do
   gem 'pry'
