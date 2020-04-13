@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.worldweatheronline.com/premium/v1/astronomy.ashx?key=&q=colorado
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.worldweatheronline.com
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Fri, 10 Apr 2020 04:42:37 GMT
+      Content-Type:
+      - text/xml
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - BunnyCDN-LA1-603
+      Cdn-Pullzone:
+      - '61832'
+      Cdn-Uid:
+      - 8fa3a04a-75d9-4707-8056-b7b33c8ac7fe
+      Cdn-Requestcountrycode:
+      - US
+      Cdn-Edgestorageid:
+      - '494'
+      Cache-Control:
+      - public, max-age=5
+      Cdn-Cachedat:
+      - '2020-04-10 04:42:37'
+      Cdn-Requestid:
+      - c571feb6299441cdb6a24ac5ef7892f9
+      Cdn-Cache:
+      - MISS
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="UTF-8"?><data><error><msg>Parameter key
+        is missing from the request URL</msg></error></data>
+    http_version: null
+  recorded_at: Fri, 10 Apr 2020 04:42:37 GMT
+recorded_with: VCR 5.1.0
