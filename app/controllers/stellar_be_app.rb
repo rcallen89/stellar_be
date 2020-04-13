@@ -22,4 +22,10 @@ class StellarBeAPP < Sinatra::Base
     response = service.get_response(params[:query])
     json(response)
   end
+
+  get '/iotd' do
+    service = ImageOfTheDayService.new
+    response = service.get_image
+    json(response)
+  end
 end
