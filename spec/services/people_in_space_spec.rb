@@ -9,20 +9,4 @@ RSpec.describe "People In Space Api" do
     expect(response.class).to eq(Array)
     expect(response.first.class).to eq(Hash)
   end
-
-  it "can successfully get space crafts in space", :vcr do
-    service = SpacePeopleService.new
-    response = service.get_space_crafts
-
-    expect(response.class).to eq(Array)
-    expect(response.first.class).to eq(String)
-  end
-
-  it "can successfully get names of people in space", :vcr do
-    service = SpacePeopleService.new
-    response = service.get_names
-
-    expect(response.class).to eq(Array)
-    expect(response.first.class).to eq(String)
-  end
 end
