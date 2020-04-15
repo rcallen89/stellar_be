@@ -11,4 +11,15 @@ RSpec.describe "Solar System Api", type: :request do
     expect(response.has_key?(:isPlanet)).to eq(true)
     expect(response.has_key?(:moons)).to eq(true)
   end
+  
+  it "can get a generic search for a single body", :vcr do
+    service = SolarSystemService.new
+    response = service.get_response("kale")
+
+    expect(response.class).to eq(Hash)
+    expect(response[:name]).to eq("Calé")
+    expect(response.has_key?(:id)).to eq(true)
+    expect(response.has_key?(:isPlanet)).to eq(true)
+    expect(response.has_key?(:moons)).to eq(true)
+  end
 end

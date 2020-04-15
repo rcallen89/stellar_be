@@ -6,7 +6,7 @@ class StellarBeAPP < Sinatra::Base
   end
 
   get '/search' do
-    response = SolarSystemService.get_response(params[:query])
+    response = SolarSystemService.get_response(params[:query].capitalize)
     json(response)
   end
 
