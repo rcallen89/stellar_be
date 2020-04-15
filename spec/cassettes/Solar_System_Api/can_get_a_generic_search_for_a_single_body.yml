@@ -1,0 +1,88 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.le-systeme-solaire.net/rest/bodies/cale
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 15 Apr 2020 11:50:16 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Iplb-Instance:
+      - '29040'
+      Set-Cookie:
+      - SERVERID102299=22060|Xpb0+|Xpb0+; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpZCI6ImNhbGUiLCJuYW1lIjoiQ2Fsw6kiLCJlbmdsaXNoTmFtZSI6IkthbGUiLCJpc1BsYW5ldCI6ZmFsc2UsIm1vb25zIjpudWxsLCJzZW1pbWFqb3JBeGlzIjoyMzMwMjAwMCwicGVyaWhlbGlvbiI6MCwiYXBoZWxpb24iOjAsImVjY2VudHJpY2l0eSI6MC4yNjAwMCwiaW5jbGluYXRpb24iOjE2NS4wMDAwMCwibWFzcyI6eyJtYXNzVmFsdWUiOjEuNTAwMDAsICJtYXNzRXhwb25lbnQiOjEzfSwidm9sIjp7InZvbFZhbHVlIjowLjAwMDAwLCAidm9sRXhwb25lbnQiOjB9LCJkZW5zaXR5IjoxLjAwMDAwLCJncmF2aXR5IjowLjAwMDgxLCJlc2NhcGUiOjAsIm1lYW5SYWRpdXMiOjEuMDAwMDAsImVxdWFSYWRpdXMiOjAsInBvbGFyUmFkaXVzIjowLCJmbGF0dGVuaW5nIjowLCJkaW1lbnNpb24iOiIiLCJzaWRlcmFsT3JiaXQiOjcyOS41MDAwMCwic2lkZXJhbFJvdGF0aW9uIjowLCJhcm91bmRQbGFuZXQiOnsicGxhbmV0IjoianVwaXRlciIsICJyZWwiOiJodHRwczovL2FwaS5sZS1zeXN0ZW1lLXNvbGFpcmUubmV0L3Jlc3QvYm9kaWVzL2p1cGl0ZXIifSwiZGlzY292ZXJlZEJ5IjoiU2NvdHQgUy4gU2hlcHBhcmQsIERhdmlkIEMuIEpld2l0dCIsImRpc2NvdmVyeURhdGUiOiIxOS8xMi8yMDAxIiwiYWx0ZXJuYXRpdmVOYW1lIjoiUy8yMDAxIEogOCJ9
+    http_version: null
+  recorded_at: Wed, 15 Apr 2020 11:50:16 GMT
+- request:
+    method: get
+    uri: https://api.le-systeme-solaire.net/rest/bodies/pluton
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 15 Apr 2020 11:53:29 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - Apache
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Iplb-Instance:
+      - '29043'
+      Set-Cookie:
+      - SERVERID102299=22060|Xpb1v|Xpb1v; path=/
+    body:
+      encoding: UTF-8
+      string: '{"id":"pluton","name":"Pluton","englishName":"Pluto","isPlanet":true,"moons":[{"moon":"Charon","rel":"https://api.le-systeme-solaire.net/rest/bodies/charon"},{"moon":"Nix","rel":"https://api.le-systeme-solaire.net/rest/bodies/nix"},{"moon":"Hydra","rel":"https://api.le-systeme-solaire.net/rest/bodies/hydra"},{"moon":"Kerberos","rel":"https://api.le-systeme-solaire.net/rest/bodies/kerberos"},{"moon":"Styx","rel":"https://api.le-systeme-solaire.net/rest/bodies/styx"}],"semimajorAxis":5906440628,"perihelion":2147483647,"aphelion":2147483647,"eccentricity":0.24880,"inclination":17.16000,"mass":{"massValue":1.30300,
+        "massExponent":22},"vol":{"volValue":7.15000, "volExponent":9},"density":1.89000,"gravity":0.62000,"escape":1210.00000,"meanRadius":1188.30000,"equaRadius":1188.30000,"polarRadius":1195.00000,"flattening":0,"dimension":"","sideralOrbit":90465.00000,"sideralRotation":-153.29280,"aroundPlanet":null,"discoveredBy":"Clyde
+        W. Tombaugh","discoveryDate":"18/02/1930","alternativeName":""}'
+    http_version: null
+  recorded_at: Wed, 15 Apr 2020 11:53:29 GMT
+recorded_with: VCR 5.1.0

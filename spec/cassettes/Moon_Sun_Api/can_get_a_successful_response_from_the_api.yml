@@ -1,0 +1,113 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.worldweatheronline.com/premium/v1/astronomy.ashx?key=&q=Colorado
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.worldweatheronline.com
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Fri, 10 Apr 2020 04:42:38 GMT
+      Content-Type:
+      - text/xml
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - BunnyCDN-LA1-603
+      Cdn-Pullzone:
+      - '61832'
+      Cdn-Uid:
+      - 8fa3a04a-75d9-4707-8056-b7b33c8ac7fe
+      Cdn-Requestcountrycode:
+      - US
+      Cdn-Edgestorageid:
+      - '603'
+      Cache-Control:
+      - public, max-age=5
+      Cdn-Cachedat:
+      - '2020-04-09 20:42:38'
+      Cdn-Requestid:
+      - ec4e5edb42f8a928799ce42d1e73e6fd
+      Cdn-Cache:
+      - MISS
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="UTF-8"?><data><error><msg>Parameter key
+        is missing from the request URL</msg></error></data>
+    http_version: null
+  recorded_at: Fri, 10 Apr 2020 04:42:38 GMT
+- request:
+    method: get
+    uri: http://api.worldweatheronline.com/premium/v1/astronomy.ashx?key=908008954a1448e6ba1211441200904&q=Colorado
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.worldweatheronline.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 13 Apr 2020 18:03:59 GMT
+      Content-Type:
+      - text/xml
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Server:
+      - BunnyCDN-LA1-558
+      Cdn-Pullzone:
+      - '61832'
+      Cdn-Uid:
+      - 8fa3a04a-75d9-4707-8056-b7b33c8ac7fe
+      Cdn-Requestcountrycode:
+      - US
+      Cdn-Edgestorageid:
+      - '603'
+      Cache-Control:
+      - public, max-age=180
+      X-Wwo-Qpd-Left:
+      - '491'
+      Cdn-Cachedat:
+      - '2020-04-13 10:03:59'
+      Cdn-Requestid:
+      - e481c564e794aa9b7cf133ff3b2a94f2
+      Cdn-Cache:
+      - MISS
+    body:
+      encoding: ASCII-8BIT
+      string: <?xml version="1.0" encoding="UTF-8"?><data><request><type>City</type><query>Colorado</query></request><time_zone><localtime>2020-04-13
+        12:02</localtime><utcOffset>-6.0</utcOffset><zone>America/Denver</zone><sunrise>06:25
+        AM</sunrise><sunset>07:35 PM</sunset><moonrise>01:12 AM</moonrise><moonset>10:46
+        AM</moonset><moon_phase>Waning Gibbous</moon_phase><moon_illumination>53</moon_illumination></time_zone></data>
+    http_version: null
+  recorded_at: Mon, 13 Apr 2020 18:03:59 GMT
+recorded_with: VCR 5.1.0
