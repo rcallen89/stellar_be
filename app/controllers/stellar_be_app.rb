@@ -1,4 +1,9 @@
 # This is essentially the Routes File!
+require_relative '../serializers/space_people_serializer.rb'
+require_relative '../serializers/solar_system_serializer.rb'
+require_relative '../serializers/moon_sun_serializer.rb'
+require_relative '../serializers/image_of_the_day_serializer.rb'
+
 class StellarBeAPP < Sinatra::Base
 
   before do
@@ -6,26 +11,22 @@ class StellarBeAPP < Sinatra::Base
   end
 
   get '/search' do
-    service = SolarSystemService.new
-    response = service.get_response(params[:query].capitalize)
-    json(response)
+    response = SolarSystemService.get_response(params[:query].capitalize)
+    SolarSystemSerializer.data(response)
   end
 
   get '/people-in-space' do
-    service = SpacePeopleService.new
-    response = service.get_data
-    json(response)
+    response = SpacePeopleService.get_data
+    SpacePeopleSerializer.data(response)
   end
 
   get '/astronomy' do
-    service = MoonSunService.new
-    response = service.get_response(params[:query])
-    json(response)
+    response = MoonSunService.get_response(params[:query])
+    MoonSunSerializer.data(response)
   end
 
   get '/iotd' do
-    service = ImageOfTheDayService.new
-    response = service.get_image
-    json(response)
+    response = ImageOfTheDayService.get_image
+    ImageOfTheDaySerializer.data(response)
   end
 end

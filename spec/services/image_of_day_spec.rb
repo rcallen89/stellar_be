@@ -3,8 +3,7 @@ require './app/services/image_of_the_day_service.rb'
 
 RSpec.describe "IOD NASA Api", type: :request do
   it "can get a successful response from the api", :vcr do
-    service = ImageOfTheDayService.new
-    response = service.get_image
+    response = ImageOfTheDayService.get_image
 
     expect(response.class).to eq(Hash)
     expect(response.has_key?(:date)).to eq(true)

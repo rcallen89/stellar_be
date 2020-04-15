@@ -3,8 +3,7 @@ require './app/services/moon_sun_service.rb'
 
 RSpec.describe "Moon Sun Api", type: :request do
   it "can get a successful response from the api", :vcr do
-    service = MoonSunService.new
-    response = service.get_response("Colorado")
+    response = MoonSunService.get_response("Colorado")
 
     expect(response.class).to eq(Hash)
     expect(response.has_key?(:sunrise)).to eq(true)
