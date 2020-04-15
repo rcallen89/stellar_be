@@ -3,8 +3,7 @@ require './app/services/solar_system_service.rb'
 
 RSpec.describe "Solar System Api", type: :request do
   it "can get response with a single body", :vcr do
-    service = SolarSystemService.new
-    response = service.get_response("mars")
+    response = SolarSystemService.get_response("mars")
 
     expect(response.class).to eq(Hash)
     expect(response[:name]).to eq("Mars")
