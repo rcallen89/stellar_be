@@ -21,4 +21,10 @@ RSpec.describe "Solar System Api", type: :request do
     expect(response.has_key?(:isPlanet)).to eq(true)
     expect(response.has_key?(:moons)).to eq(true)
   end
+
+  it "will return nil if search term was not found", :vcr do
+    response = SolarSystemService.get_response("planet")
+
+    expect(response).to eq(nil)
+  end
 end
