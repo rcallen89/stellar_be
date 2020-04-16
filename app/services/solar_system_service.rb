@@ -6,7 +6,10 @@ class SolarSystemService
   end
 
   def self.translate(name)
-    id = SolarSystemApi.where(eng_name: name).take
+    id = SolarSystemApi.where("eng_name ILIKE '%#{name}%'").take
+    if id == nil
+      return name
+    end
     id.object_id
   end
 
